@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/236eafeedd.js" crossorigin="anonymous"></script>
+    <script src="/asserts/cell.js" defer></script>
+    <script src="/asserts/search.js" defer></script>
+    <script src="main.js" defer
+    ></script>
+    <title>Graph Algorithm Visualisation</title>
+</head>
+<body>
+    <nav class='navbar'>
+        <div>
+            <img src="/public/Amos Wings logo blank.png" alt="Amos wings" >
+        </div>
+        <ul>
+            <li><a href="https://amoswings7-dev.vercel.app" target="_blank">Portfolio</a></li>
+            <li><a href="https://github.com/amoswings7" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+    <div class='intro-section'>
+        <h1>Graph Algorithm<br/> Visualisation</h1>
+        <div class="wrapper">
+            <div class='graph-infor'>
+                <h1>What is a Graph?</h1>
+                <p>
+                    A graph in computer science or software engineering is just a representation of data that we can use and work with. We can use it to check if two points are connected or if there is relationship between them. an example would be if there is a path between New York City and Florida.
+                </p>
+                <p>
+                    We can also use a graph to search for a particular data, there are mainly two searching algorithms or searching methods we can use. One of them is called Breadth first search and the other is called Depth first search. They both got their strengths and weaknesses and you can check them out below of how they work
+                </p>
+            </div>        
+        </div>
+
+    </div>
+
+    <main class='canvas-area'>
+        <section class='right-panel'>
+            <h1>Status & infor</h1>
+            <div class="information">
+                <h1>Steps to run the program</h1>
+                <main>
+                    <p><span>1</span> Select a target number by clicking any <b>ONE</b> number on the grid</p>
+                    <p><span>2</span> Pick your search Algorithm on the drop box</p>
+                    <p><span>3</span> Click the play button</p>
+                </main>
+            </div>
+            <div class="status">
+                <h1>Status</h1>
+                <p id='discovered'>found : <span>0</span></p>
+                <p id='count'>already searched through : <span>0</span> items</p>
+            </div>
+        </section>
+        <section class='left-panel'>
+            <div id='control-panel'>
+                <button id='reset'><i class="fas fa-redo-alt"></i></button>
+                <button id='start'><i class="fas fa-play-circle"></i></button>
+                <button id='stop'><i class="fas fa-stop-circle"></i></button>
+                <label for="search">
+                    Select search algorithm
+                    <select name="search" id="searchMethod">
+                        <option value="bfs">breadth First Search</option>
+                        <option value="dfs">Depth First Search</option>
+                    </select>
+                </label>
+            </div>    
+            <canvas id='canvas'>
+    
+            </canvas>
+        </section>
+    </main>
+    
+</body>
+</html>
